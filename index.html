@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login + Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGIN BOX -->
+  <div id="loginBox" class="box">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <button onclick="login()">Login</button>
+    <p id="message"></p>
+  </div>
+
+  <!-- GALLERY BOX (HIDDEN UNTIL LOGIN) -->
+  <div id="galleryBox" class="box hidden" style="width:90%; max-width:900px;">
+    <h1>Welcome to the Gallery 🎨</h1>
+    <p>You are logged in! Here are some images:</p>
+
+    <div class="gallery">
+      <img src="love1.jpg">
+      <img src="love2.jpg">
+      <img src="love3.jpg">
+      <img src="love4.jpg">
+      <img src="love5.jpg">
+ <img src="love6.jpg">
+ <img src="love7.jpg">
+    </div>
+
+    <br>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
